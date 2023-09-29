@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.DayNight.ActionBar">
+        <item name="colorControlNormal">@color/gold_yellow</item>
+        <item name="android:titleTextColor">@color/white</item>
+        <item name="android:windowTitleSize">30sp</item>
+    </style>
+</resources>

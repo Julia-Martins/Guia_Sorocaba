@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tb_Main"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/gold_yellow"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:title="Guia de Sorocaba"
+        app:titleTextColor="@color/white" />
+    <LinearLayout
+        android:id="@+id/ll_main_initial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/main_selector_locals"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tb_Main"
+        >
+
+        <ImageView
+            android:id="@+id/img_place"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="10dp"
+
+            android:src="@drawable/parque_agua_vermelha"
+            android:scaleType="centerCrop"
+        />
+
+        <TextView
+            android:id="@+id/txt_local_name"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+
+            android:padding="5dp"
+
+            android:text="Parque Natural da Água Vermelha ''João Câncio Pereira''"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+        />
+
+        <Button
+            android:id="@+id/btn_known_more"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:text="Saiba mais"
+
+            android:backgroundTint="@color/red"
+            android:textStyle="bold"
+            android:textSize="12dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_initial2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:padding="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/main_selector_locals"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_main_initial"
+        >
+
+        <ImageView
+            android:id="@+id/img_place2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="10dp"
+
+            android:src="@drawable/parque_kasato"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/txt_local_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+
+            android:padding="5dp"
+
+            android:text="Parque Kasato Maru"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/btn_known_more2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:text="Saiba mais"
+
+            android:backgroundTint="@color/red"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_initial3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:padding="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+
+        android:background="@drawable/main_selector_locals"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_main_initial2"
+        >
+
+        <ImageView
+            android:id="@+id/img_place3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="10dp"
+
+            android:src="@drawable/botanica"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/txt_local_name3"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+
+            android:padding="5dp"
+
+            android:text="Jardim Botânico de Sorocaba Irmãos Villas-Bôas"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+
+        <Button
+            android:id="@+id/btn_known_more3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:text="Saiba mais"
+
+            android:backgroundTint="@color/red"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
